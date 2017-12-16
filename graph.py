@@ -62,7 +62,6 @@ class Graph:
     def __eulerHelper(self, u, temp):
         for v in self.graph[u]:
             if self.isEdgeValid(u, v):
-                t = True
                 #print("%d,%d" % (u, v))
                 temp.append([u, v])
                 self.removeEdge(u, v)
